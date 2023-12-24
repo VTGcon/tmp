@@ -6,7 +6,7 @@ from pyflink.datastream.connectors import DeliveryGuarantee
 from pyflink.datastream.connectors.kafka import KafkaSource, \
     KafkaOffsetsInitializer, KafkaSink, KafkaRecordSerializationSchema
 from pyflink.datastream.formats.json import JsonRowDeserializationSchema
-from pyflink.datastream.functions import MapFunction, KeyedProcessFunction, ReduceFunction
+from pyflink.datastream.functions import MapFunction, ReduceFunction
 from pyflink.datastream.window import EventTimeSessionWindows
 from pyflink.common import Time
 
@@ -38,7 +38,7 @@ def python_data_stream_example():
     sink = KafkaSink.builder() \
         .set_bootstrap_servers('kafka:9092') \
         .set_record_serializer(KafkaRecordSerializationSchema.builder()
-                               .set_topic('itmo2023_processed')
+                               .set_topic('itmo2023processed')
                                .set_value_serialization_schema(SimpleStringSchema())
                                .build()
                                ) \

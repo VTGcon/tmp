@@ -6,7 +6,7 @@ from pyflink.datastream.connectors import DeliveryGuarantee
 from pyflink.datastream.connectors.kafka import KafkaSource, \
     KafkaOffsetsInitializer, KafkaSink, KafkaRecordSerializationSchema
 from pyflink.datastream.formats.json import JsonRowDeserializationSchema
-from pyflink.datastream.functions import MapFunction, KeyedProcessFunction, ReduceFunction
+from pyflink.datastream.functions import MapFunction, ReduceFunction
 from pyflink.datastream.window import TumblingProcessingTimeWindows
 from pyflink.common import Time
 
