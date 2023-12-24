@@ -10,5 +10,6 @@ docker-compose exec jobmanager ./bin/flink run -py /opt/pyflink/device_job.py -d
 python3.11 producer_1.py
 python3.11 consumer_1.py
 ```
+Сделал только первый пункт с local dir.
 # Block 2
 Команды для запуска те же самые, только используем другие джобы с соответсвующими названиями
