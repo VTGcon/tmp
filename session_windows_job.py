@@ -4,7 +4,7 @@ from pyflink.common.watermark_strategy import WatermarkStrategy
 from pyflink.datastream import StreamExecutionEnvironment, TimeCharacteristic, CheckpointStorage
 from pyflink.datastream.connectors import DeliveryGuarantee
 from pyflink.datastream.connectors.kafka import KafkaSource, \
-    KafkaOffsetsInitializer, KafkaSink, KafkaRecordSerializationSchema
+    KafkaOffsetsInitializer, KafkaSink, KafkaRecordSerializationSchema 
 from pyflink.datastream.formats.json import JsonRowDeserializationSchema
 from pyflink.datastream.functions import MapFunction, ReduceFunction
 from pyflink.datastream.window import EventTimeSessionWindows
