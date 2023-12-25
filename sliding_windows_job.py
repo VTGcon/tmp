@@ -38,7 +38,7 @@ def python_data_stream_example():
     sink = KafkaSink.builder() \
         .set_bootstrap_servers('kafka:9092') \
         .set_record_serializer(KafkaRecordSerializationSchema.builder()
-                               .set_topic('itmo2023processed')
+                               .set_topic('itmo2023_processed')
                                .set_value_serialization_schema(SimpleStringSchema())
                                .build()
                                ) \
